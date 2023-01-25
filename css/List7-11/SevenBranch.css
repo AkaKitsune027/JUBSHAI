@@ -1,0 +1,121 @@
+body {
+    margin: auto;
+    font-family: 'Itim', 'Athiti', cursive, sans-serif;
+    font-size: 18px;
+    display: grid;
+    background-color: rgb(34, 33, 32);
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 26%;
+    }
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+   }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        background-color: orange;
+        width: 95%;
+        height: 30em;
+    }
+
+    .div2 {
+        margin: auto;
+        display: inline-flex;
+        grid-area: 2 / 1 / 3 / 2; 
+        background-color: rgb(66, 64, 63);
+        text-align: center;
+        width: 95%;
+        height: 5em;
+        justify-content: space-around;
+   }
+
+   .div3 {
+    grid-area: 3 / 1 / 4 / 2; 
+    background-color: antiquewhite;
+    text-align: center;
+    width: 95%;
+    height: 30em;
+    row-gap: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: auto;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(228, 228, 228, 0.803);
+    border-radius: 1em;
+    height: 1em;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(228, 228, 228, 0.5);
+}
+
+/* ------------- TopMenu --------------- */
+
+.logo{
+    color:orange;
+    text-shadow: 0px 1px 15px rgb(27, 118, 63);
+    font-weight: bold;
+    font-size: 1.3em;
+   }
+
+   .topMenu{
+    font-size: 1.2em;
+   }
+
+   .topMenu a, .topMenu a:visited{
+    color: azure;
+   }
+
+   .topMenu a:hover{
+    color:rgb(255, 128, 0);
+    text-shadow: 0px 1px 8px rgb(142, 82, 4);
+    transition: all 0.25s;
+   }
+
+   .topMenu  a:active{
+    transform: scale(0.8);
+   }
+
+   /* -- Info -- */
+
+table {
+    margin: auto;
+    width:  90%;
+    color: black;
+    text-align: center;
+    box-shadow: 0px 0px 5px black;
+} 
+
+table th {
+    font-weight: 100;
+    background-color: brown;
+    color: rgb(248, 252, 255);
+}
+
+table td {
+    background-color: rgb(248, 252, 255);
+    color:rgb(34, 33, 32);
+}

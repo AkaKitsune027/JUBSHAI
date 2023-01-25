@@ -1,0 +1,151 @@
+body {
+    margin: auto;
+    font-family: 'Itim', 'Athiti', cursive, sans-serif;
+    font-size: 18px;
+    display: grid;
+    background-color: rgb(34, 33, 32);
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 26%;
+    }
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    a {
+        text-decoration: none;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        background-color: orange;
+        width: 95%;
+        height: 30em;
+    }
+
+    .div2 {
+        margin: auto;
+        display: inline-flex;
+        grid-area: 2 / 1 / 3 / 2; 
+        background-color: rgb(66, 64, 63);
+        text-align: center;
+        width: 95%;
+        height: 5em;
+        justify-content: space-around;
+    }
+
+   .div3 {
+    grid-area: 3 / 1 / 4 / 2; 
+    background-color: antiquewhite;
+    text-align: center;
+    width: 95%;
+    height: 100%;
+    /* row-gap: 1em; */
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: auto;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(228, 228, 228, 0.803);
+    border-radius: 1em;
+    height: 1em;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(228, 228, 228, 0.5);
+}
+
+/* ------------- TopMenu --------------- */
+
+.logo{
+    color:orange;
+    text-shadow: 0px 1px 15px rgb(27, 118, 63);
+    font-weight: bold;
+    font-size: 1.3em;
+   }
+
+   .topMenu{
+    font-size: 1.2em;
+   }
+
+   .topMenu a, .topMenu a:visited{
+    color: azure;
+   }
+
+   .topMenu a:hover{
+    color:rgb(255, 128, 0);
+    text-shadow: 0px 1px 8px rgb(142, 82, 4);
+    transition: all 0.25s;
+   }
+
+   .topMenu  a:active{
+    transform: scale(0.8);
+   }
+
+/* ------------- Menu --------------- */
+
+.all {
+    margin: auto;
+    width: 90%;
+    background-color: rgb(242, 242, 242);
+    box-shadow: grey 1px 1px 3px;
+    border-radius: 20%;
+}
+
+   .topic_Cafe {
+    color: rgb(83, 50, 0);
+    margin: 1em;
+    font-size: 2em;
+    font-weight: bold;
+   }
+
+   .topic_cafe {
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 30%;
+    color: rgb(240, 239, 239);
+    font-size: 1.5em;
+    text-shadow: rgb(54, 54, 54) 1px 1px 3px;
+    background-color: rgb(165, 85, 42);
+   }
+
+   .menu p{
+    display:inline-block;
+    width: 22.5%;
+   }
+
+
+   .topic_type_cafe {
+    font-size: 1.3em;
+    gap: 1em;
+   }
+
+   .menu {
+    font-size: 1em;
+   }
+
+   img {
+    margin: auto;
+    display: flex;
+    width: 22.5%;
+    height: 20%;
+    flex-wrap: wrap;
+   }

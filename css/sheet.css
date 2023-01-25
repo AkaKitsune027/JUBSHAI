@@ -1,0 +1,199 @@
+body {
+    margin: auto;
+    font-family: 'Itim', 'Athiti', cursive, sans-serif;
+    font-size: 18px;
+    display: grid;
+    background-color: rgb(34, 33, 32);
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 26%;
+    }
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+   }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        background-color: orange;
+        width: 95%;
+        height: 30em;
+    }
+
+    .div2 {
+        margin: auto;
+        display: inline-flex;
+        grid-area: 2 / 1 / 3 / 2; 
+        background-color: rgb(66, 64, 63);
+        text-align: center;
+        width: 95%;
+        height: 5em;
+        justify-content: space-around;
+   }
+
+   .div3 {
+    grid-area: 3 / 1 / 4 / 2; 
+    background-color: antiquewhite;
+    text-align: center;
+    width: 95%;
+    height: 10em;
+    row-gap: 1em;
+}
+
+.div4 { 
+   grid-area: 5 / 1 / 6 / 2; 
+   background-color: antiquewhite;
+   display: flex;
+   width: 95%;
+   height: 20em;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: auto;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(228, 228, 228, 0.803);
+    border-radius: 1em;
+    height: 1em;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(228, 228, 228, 0.5);
+}
+/* ------------- TopMenu --------------- */
+
+   .logo{
+    color:orange;
+    text-shadow: 0px 1px 15px rgb(27, 118, 63);
+    font-weight: bold;
+    font-size: 1.3em;
+   }
+
+   .topMenu{
+    font-size: 1.2em;
+   }
+
+   .topMenu a, .topMenu a:visited{
+    color: azure;
+   }
+
+   .topMenu a:hover{
+    color:rgb(255, 128, 0);
+    text-shadow: 0px 1px 8px rgb(142, 82, 4);
+    transition: all 0.25s;
+   }
+
+   .topMenu  a:active{
+    transform: scale(0.8);
+   }
+
+   /* ------------- button --------------- */
+   .lg {
+        display: flex;
+        justify-content: right;
+        margin-right: 1%;
+   }
+   .btnlg {
+        display: flex;
+        justify-content: end;
+        align-content: center;
+        background-color: aliceblue;
+        border-radius: 15%;
+        width: 12em;
+        height: 3em;
+        box-shadow: 2px 0px 3px grey;
+        font-weight: 600;
+   }
+
+.btnlg :hover{
+    transform:scaleY(0.5);
+}
+
+   .piclg {
+    display: flex;
+    justify-content:flex-end;
+    align-content: center;
+    background-color: bisque;
+    width: 2.8em;
+    height: 2.5em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px grey;
+   
+   }
+
+   /* ------------- purpose --------------- */
+    
+    .purpose {
+        background-color: rgb(255, 248, 240);
+        padding: 50px;
+        width: fit-content;
+        border-radius: 20%;
+        box-shadow: 1px 2px 6px grey;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    /* ------------- ShortMenu --------------- */
+
+    .div4{
+        display: flex;
+    }
+
+    /* img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    } */
+
+    a .shortMenu_1,.shortMenu_2,.shortMenu_3 {
+        margin: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 10em;
+        flex-wrap: wrap;
+        
+        width: 60%;
+        height: 70%;
+        color:rgb(0, 0, 0);
+        font-size: 30px;
+        background-color: rgb(201, 198, 190);
+        border-radius: 15%;
+        text-align: center;
+        padding: 5%;
+
+        box-shadow: 1px 3px 2px gray;
+    }
+
+    a .shortMenu_1:hover ,.shortMenu_2:hover ,.shortMenu_3:hover {
+        background-color: rgb(238, 211, 39);
+        color: white;
+    }
+
+    a .shortMenu_1:visited ,.shortMenu_2:visited ,.shortMenu_3:visited {
+        color:rgb(255, 94, 13);
+    }
