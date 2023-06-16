@@ -3,9 +3,9 @@ body {
     font-family: 'Itim', 'Athiti', cursive, sans-serif;
     font-size: 18px;
     display: grid;
-    background-color: rgb(34, 33, 32);
     width: 100vw;
     height: 100vh;
+    overflow: overlay;
 }
 
 .grid {
@@ -15,7 +15,7 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 100%;
-    height: 26%;
+    height: 2%;
     }
 
 .flex {
@@ -32,7 +32,7 @@ a {
     .div1 { 
         grid-area: 1 / 1 / 2 / 2; 
         background-color: orange;
-        width: 95%;
+        width: 100%;
         height: 30em;
     }
 
@@ -40,18 +40,20 @@ a {
         margin: auto;
         display: inline-flex;
         grid-area: 2 / 1 / 3 / 2; 
-        background-color: rgb(66, 64, 63);
+        background-color: rgba(66, 64, 63, 0.479);
+        box-shadow: 1px 0px 4px rgba(58, 58, 58, 0.544);
         text-align: center;
-        width: 95%;
-        height: 5em;
+        width: 100%;
+        height: 3.5em;
         justify-content: space-around;
+        position: fixed;
    }
 
    .div3 {
     grid-area: 3 / 1 / 4 / 2; 
     background-color: antiquewhite;
     text-align: center;
-    width: 95%;
+    width: 100%;
     height: 10em;
     row-gap: 1em;
 }
@@ -60,12 +62,12 @@ a {
    grid-area: 5 / 1 / 6 / 2; 
    background-color: antiquewhite;
    display: flex;
-   width: 95%;
+   width: 100%;
    height: 20em;
 }
 
 ::-webkit-scrollbar {
-    width: 1em;
+    width: 0.7em;
     height: auto;
     background-color: transparent;
 }
@@ -73,7 +75,7 @@ a {
 ::-webkit-scrollbar-thumb {
     background-color: rgba(228, 228, 228, 0.803);
     border-radius: 1em;
-    height: 1em;
+    height: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -81,12 +83,13 @@ a {
 }
 /* ------------- TopMenu --------------- */
 
-   .logo{
-    color:orange;
-    text-shadow: 0px 1px 15px rgb(27, 118, 63);
+.logo{
+    color:rgb(255, 128, 0.568);
+    text-shadow: 0px 1px 5px rgb(82, 76, 63);
     font-weight: bold;
     font-size: 1.3em;
    }
+
 
    .topMenu{
     font-size: 1.2em;
@@ -99,33 +102,37 @@ a {
    .topMenu a:hover{
     color:rgb(255, 128, 0);
     text-shadow: 0px 1px 8px rgb(142, 82, 4);
+    
+    border-radius: 10%;
     transition: all 0.25s;
    }
 
-   .topMenu  a:active{
+   .topMenu a:active{
     transform: scale(0.8);
    }
 
    /* ------------- button --------------- */
    .lg {
         display: flex;
-        justify-content: right;
+        justify-items: space-around;
+        align-items: center;
         margin-right: 1%;
    }
    .btnlg {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-content: center;
-        background-color: aliceblue;
+        background-color: rgba(240, 248, 255, 0.679);
         border-radius: 15%;
-        width: 12em;
-        height: 3em;
-        box-shadow: 2px 0px 3px grey;
+        width: 5em;
+        height: 2.5em;
+        box-shadow: 0px 0px 3px grey;
         font-weight: 600;
    }
 
-.btnlg :hover{
-    transform:scaleY(0.5);
+.btnlg:active{
+    transform:scale(0.9);
+    transition: all 0.2s;
 }
 
    .piclg {
@@ -158,14 +165,8 @@ a {
 
     .div4{
         display: flex;
+        height: auto;
     }
-
-    /* img {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    } */
 
     a .shortMenu_1,.shortMenu_2,.shortMenu_3 {
         margin: auto;
@@ -185,7 +186,6 @@ a {
         border-radius: 15%;
         text-align: center;
         padding: 5%;
-
         box-shadow: 1px 3px 2px gray;
     }
 
